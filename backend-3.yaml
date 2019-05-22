@@ -1,0 +1,26 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: backend-3
+  labels:
+    app: backend-3
+spec:
+  containers:
+    - name: backend-3
+      image: kaleeswarankaruppusamy/e2esystem:kubia4
+      imagePullPolicy: "Always"
+      args:
+        - "-text=backend-3"
+
+---
+
+kind: Service
+apiVersion: v1
+metadata:
+  name: backend-3
+spec:
+  selector:
+    app: backend-3
+  ports:
+    - port: 8080 # Default port for image
+
