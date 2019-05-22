@@ -1,5 +1,6 @@
 # kubernatis_ingress_stickysession_Scaling
 
+![Screenshot](ServiceFlow.png)
 
 
 Steps 
