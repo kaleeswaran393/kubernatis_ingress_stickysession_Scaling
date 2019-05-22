@@ -1,0 +1,1 @@
+# kubernatis_ingress_stickysession_Scaling
