@@ -21,9 +21,9 @@ Steps
     EXPOSE 8080
     ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/kubia-1.0.0.jar"]
     
- >    docker build -t kubia:1.0.0 .
- >    docker tag kubia:1.0.0  kaleeswarankaruppusamy/e2esystem:kubia4
- >    docker push  <DOCKER_REPO>:kubia4
+     1.docker build -t kubia:1.0.0 .
+     2.docker tag kubia:1.0.0  kaleeswarankaruppusamy/e2esystem:kubia4
+     3.docker push  <DOCKER_REPO>:kubia4
  
  
  5. K8S Deployment Files
