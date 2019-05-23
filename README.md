@@ -30,3 +30,21 @@ Steps
       5. kubectl apply -f backend-3.yaml
       
  
+Sample Request and Reponse 
+=========================
+
+POST /hit_backend HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+{
+	"username": "user",
+	"target":"backend-1"
+}
+
+Response : 
+{
+    "target": "backend-1",
+    "username": "user",
+    "podId": "backend-1-zlxtc"
+}
+
