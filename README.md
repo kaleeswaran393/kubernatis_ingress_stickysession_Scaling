@@ -39,53 +39,47 @@
       5. kubectl apply -f backend-3.yaml
       
  
-### Sample Request and Reponse 
+ ### 6.Sample Request and Reponse 
+	POST /hit_backend HTTP/1.1
+	Host: localhost:8080
+	Content-Type: application/json
+	{
+		"username": "user",
+		"target":"backend-1"
+	}
 
-
-POST /hit_backend HTTP/1.1
-Host: localhost:8080
-Content-Type: application/json
-{
-	"username": "user",
-	"target":"backend-1"
-}
-
-Response : 
-{
-    "target": "backend-1",
-    "username": "user",
-    "podId": "backend-1-zlxtc"
-}
+	Response : 
+	{
+	    "target": "backend-1",
+	    "username": "user",
+	    "podId": "backend-1-zlxtc"
+	}
 
 
 ### Useful docker command 
-
-
-Docker image prune --force
-docker image ls
-docker image rm
-docker load & Save
-docker ps -a 
-docker stop <containerid>
-docker rm 
-
+	Docker image prune --force
+	docker image ls
+	docker image rm
+	docker load & Save
+	docker ps -a 
+	docker stop <containerid>
+	docker rm 
 
 ### K8S Command
-
-1. brew cask install minikube   #install using virtualbox
-2. minikube status
-3. minikube delete
-4. minikube ip
-5. kubectl describe ing backend-ingress
-6. minikube dashboard   - K8s ui
-7. kubectl describe service servicename
-8. kubectl delete service servicename
-9. kubctl delete deployment deploymentname
-10 kubectl delete pod podname
-11. kubectl get service
-12. kubectl get pod
-13. kubectl get deplopyment
-14. kubectl get ReplicaSet
+	1. brew cask install minikube   #install using virtualbox
+	2. minikube status
+	3. minikube delete
+	4. minikube ip
+	5. kubectl describe ing backend-ingress
+	6. minikube dashboard   - K8s ui
+	7. kubectl describe service servicename
+	8. kubectl delete service servicename
+	9. kubctl delete deployment deploymentname
+	10 kubectl delete pod podname
+	11. kubectl get service
+	12. kubectl get pod
+	13. kubectl get deplopyment
+	14. kubectl get ReplicaSet
 
 
 
