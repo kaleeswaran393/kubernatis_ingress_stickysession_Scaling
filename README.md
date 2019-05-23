@@ -39,8 +39,8 @@
       5. kubectl apply -f backend-3.yaml
       
  
-Sample Request and Reponse 
-=========================
+### Sample Request and Reponse 
+
 
 POST /hit_backend HTTP/1.1
 Host: localhost:8080
@@ -58,8 +58,8 @@ Response :
 }
 
 
-Useful docker command 
-======================
+### Useful docker command 
+
 
 Docker image prune --force
 docker image ls
@@ -70,8 +70,8 @@ docker stop <containerid>
 docker rm 
 
 
-K8S Command
-===========
+### K8S Command
+
 1. brew cask install minikube   #install using virtualbox
 2. minikube status
 3. minikube delete
